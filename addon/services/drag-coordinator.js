@@ -76,7 +76,7 @@ export default Service.extend({
     const currentOffsetItem = this.get('currentOffsetItem');
     const pos = this.relativeClientPosition(emberObject.element, event);
     const hasSameSortingScope =
-      this.get('currentDragItem.sortingScope') ===
+      this.get('currentDragItem').sortingScope ===
       emberObject.get('sortingScope');
     let moveDirections = [];
 
